@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> rolling tire</title>
+<style>
+/*#tireOne{
+	height:100px;
+	width:100px;
+	background:black;
+	border-color:blue;
+	padding:10px 10px 10px 10px;
+	border-radius:100%;
+	border:solid 2px blue;
+	animation-duration:2s;
+	animation-delay:5s;
+	animation-name:rolling;
+	animation-iteration-count:infinite;
+	}*/
+#lineTire{
+	height:2px;
+	width:10%;
+	background:red;
+	margin-top:20px;
+	animation-duration:8s;
+	animation-name:rolling;
+	animation-iteration-count:infinite;
+	}
+@keyframes rolling{
+	0%{background:yellow; top:10px; transform:rotate:(45deg)}
+	25%{background:blue; top:10px; transform:rotate:(90deg)}
+	50%{background:red; margin-left:800px; top:10px; transform:rotate:(125deg)}
+	75%{background:green; top:10px; transform:rotate:(150deg); border:solid 30px green;}
+	100%{background:silver; transform:rotate:(225deg); border:solid 10px red;}
+	from left{border:solid 5px green ;}
+	to right{border:solid 10px red ;}
+	}
+
+</style>
+</head>
+<body>
+<div id="tireOne">
+	<div id="lineTire"></div>
+</div>
+</body>
+</html>
